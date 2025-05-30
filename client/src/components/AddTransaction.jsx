@@ -22,7 +22,7 @@ const AddTransaction = ({ transactionType, categories, onAdded }) => {
       const user = JSON.parse(localStorage.getItem("user"));
       const token = user?.token;
 
-      await axios.post("http://localhost:5000/api/transactions", form, {
+      await axios.post("https://financetracker-rmg9.onrender.com/api/transactions", form, {
         headers: { Authorization: `Bearer ${token}` },
       });
 
