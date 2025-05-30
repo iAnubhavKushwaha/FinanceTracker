@@ -19,7 +19,7 @@ const IncomePage = () => {
     try {
       const user = JSON.parse(localStorage.getItem("user"));
       const token = user?.token;
-      const res = await axios.get("http://localhost:5000/api/transactions", {
+      const res = await axios.get("https://financetracker-rmg9.onrender.com/api/transactions", {
         headers: { Authorization: `Bearer ${token}` },
       });
       const incomeOnly = res.data.filter((t) => t.type === "income");
