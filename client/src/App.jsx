@@ -1,5 +1,5 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import { AuthProvider } from "./context/authContext";
+import { AuthProvider } from "./context/AuthContext";
 import Login from "./Pages/auth/Login";
 import Register from "./Pages/auth/Register";
 import Dashboard from "./Pages/Dashboard";
@@ -17,10 +17,9 @@ const App = () => {
           <Router>
             <Routes>
               {/* Public Routes */}
-              <Route path="/" element={<Login />} />  // ✅ Set as new root
+              <Route path="/" element={<Login />} /> // ✅ Set as new root
               <Route path="/login" element={<Login />} />
               <Route path="/register" element={<Register />} />
-
               {/* Protected Routes */}
               <Route
                 path="/dashboard"
