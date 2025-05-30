@@ -14,7 +14,7 @@ const Dashboard = () => {
   const fetchTransactions = useCallback(async () => {
     try {
       const token = storedUser?.token;
-      const res = await axios.get("http://localhost:5000/api/transactions", {
+      const res = await axios.get("https://financetracker-rmg9.onrender.com/transactions", {
         headers: { Authorization: `Bearer ${token}` },
       });
       setTransactions(res.data);
@@ -30,7 +30,7 @@ const Dashboard = () => {
   const handleDelete = async (id) => {
     try {
       const token = storedUser?.token;
-      await axios.delete(`http://localhost:5000/api/transactions/${id}`, {
+      await axios.delete(`https://financetracker-rmg9.onrender.com/transactions/${id}`, {
         headers: { Authorization: `Bearer ${token}` },
       });
       fetchTransactions();

@@ -17,7 +17,7 @@ const Login = () => {
     e.preventDefault();
     setError("");
     try {
-      const res = await axios.post("http://localhost:5000/api/auth/login", form);
+      const res = await axios.post("https://financetracker-rmg9.onrender.com/login", form);
       login(res.data);
       navigate("/dashboard");
     } catch (err) {

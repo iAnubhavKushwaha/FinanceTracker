@@ -16,7 +16,7 @@ const Register = () => {
     e.preventDefault();
     setError('');
     try {
-      const res = await axios.post('http://localhost:5000/api/auth/register', form);
+      const res = await axios.post('https://financetracker-rmg9.onrender.com/register', form);
       login(res.data); // Login immediately after registration
       navigate('/dashboard');
     } catch (err) {
