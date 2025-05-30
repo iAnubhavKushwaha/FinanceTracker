@@ -24,7 +24,7 @@ const ExpensePage = () => {
     try {
       const user = JSON.parse(localStorage.getItem("user"));
       const token = user?.token;
-      await axios.delete(`http://localhost:5000/api/transactions/${id}`, {
+      await axios.delete(`https://financetracker-rmg9.onrender.com/api/transactions/${id}`, {
         headers: { Authorization: `Bearer ${token}` },
       });
       fetchExpenses();
