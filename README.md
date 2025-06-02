@@ -6,62 +6,71 @@ A full-stack web application to manage your personal finances. Track income and 
 
 ## ✨ Features
 
-- 🔐 User Authentication with secure JWT tokens
-- 💸 Add, edit, and delete income or expense transactions
-- 📅 Filter transactions by date, type, or category
-- 📊 Visual Dashboard powered by Recharts
-  - Monthly income vs expense charts
-  - Category-wise spending insights
-- 🧠 Smart filtering using MongoDB aggregation pipeline
-- 🛡️ Protected API routes with Express middleware
-- ⚡ Modern UI with responsive Tailwind CSS
+- 🔐 **User Authentication** with secure JWT tokens  
+- 💸 **Transaction Management**: Add, edit, and delete income or expense entries  
+- 📅 **Smart Filtering**: Filter transactions by date, type, or category  
+- 📊 **Visual Dashboard** powered by Recharts  
+  - Monthly income vs expense trends  
+  - Category-wise spending insights  
+- 🧠 **Efficient Backend Filtering** with MongoDB aggregation pipeline  
+- 🛡️ **Protected API Routes** using Express middleware  
+- ⚡ **Responsive UI** built with Tailwind CSS
 
 ---
 
 ## 🛠️ Tech Stack
 
-### Frontend
+### 🖥️ Frontend
 
-- React 19 + Vite
-- React Router DOM v7
-- Tailwind CSS v4
-- Recharts (for data visualization)
-- Axios (for API calls)
+- **React 19 + Vite** – Fast, modern SPA development
+- **React Router DOM v7** – Route-based navigation
+- **Tailwind CSS v4** – Utility-first styling
+- **Recharts** – Clean data visualizations
+- **Axios** – For communicating with the backend API
 
-### Backend
+### 🌐 Backend
 
-- Node.js + Express.js (v5)
-- MongoDB + Mongoose (v8)
-- JWT for authentication
-- bcryptjs for password hashing
-- dotenv for environment variables
-- CORS for cross-origin requests
-- nodemon for development
+- **Node.js + Express.js (v5)** – REST API development
+- **MongoDB + Mongoose (v8)** – NoSQL database
+- **JWT** – Secure authentication tokens
+- **bcryptjs** – Password hashing
+- **dotenv** – Manage environment variables
+- **CORS** – Cross-origin requests support
+- **nodemon** – Live backend server reload during development
 
-### Getting Started
+---
 
+## 🚀 Getting Started
 
+Follow these steps to run the project locally:
+
+### 🔧 Backend Setup
+
+```bash
 # 1. Clone the repository
 git clone https://github.com/iAnubhavKushwaha/FinanceTracker.git
+cd FinanceTracker
 
 # 2. Install backend dependencies
 cd server
 npm install
 
-# 3. Create .env file inside server directory (fill it with your values)
+# 3. Create .env file inside the server directory
 touch .env
-# Then open .env and add:
-# PORT=5000
-# MONGO_URI=your_mongodb_connection_string
-# JWT_SECRET=your_jwt_secret
+PORT=5000
+MONGO_URI=your_mongodb_connection_string
+JWT_SECRET=your_jwt_secret
 
-# 4. Start backend server in development mode
+# 4. Start backend server (development mode)
 npm run dev
 
-# 5. Open new terminal tab/window for frontend setup
+FrontEnd Setup
+
+# 5. Open new terminal tab/window
 cd client
+
+# 6. Install frontend dependencies
 npm install
 
-# 6. Start the frontend development server
+# 7. Start frontend development server
 npm run dev
-
