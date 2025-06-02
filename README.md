@@ -38,3 +38,30 @@ A full-stack web application to manage your personal finances. Track income and 
 - CORS for cross-origin requests
 - nodemon for development
 
+### Getting Started
+
+
+# 1. Clone the repository
+git clone https://github.com/iAnubhavKushwaha/FinanceTracker.git
+
+# 2. Install backend dependencies
+cd server
+npm install
+
+# 3. Create .env file inside server directory (fill it with your values)
+touch .env
+# Then open .env and add:
+# PORT=5000
+# MONGO_URI=your_mongodb_connection_string
+# JWT_SECRET=your_jwt_secret
+
+# 4. Start backend server in development mode
+npm run dev
+
+# 5. Open new terminal tab/window for frontend setup
+cd client
+npm install
+
+# 6. Start the frontend development server
+npm run dev
+
